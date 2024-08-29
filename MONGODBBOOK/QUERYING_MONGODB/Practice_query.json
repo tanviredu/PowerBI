@@ -1,0 +1,470 @@
+
+// create and use the databse
+// if there is not database it will create it
+// otherwise it will createit
+use test
+db.createCollection("aircraft");
+db.aircraft.insertMany([
+    {
+        "code": "1b7ad0de-5836-489b-9791-5a81a51cdb81",
+        "model" : "Boeing 737-400",
+        "minRunwayLength" : 1700,
+        "range": 3500,
+        "capacity": 189
+    },
+    {
+        "code": "eede6be6-f716-4e2e-bf81-885f0a16a50c",
+        "model" : "Boeing 737-800",
+        "minRunwayLength" : 2500,
+        "range": 5765,
+        "capacity": 200
+    },
+    {
+        "code": "1b7ad0de-5836-489b-9791-5a81a51cdb81",
+        "model" : "Airbus A320",
+        "minRunwayLength" : 2500,
+        "range": 6000,
+        "capacity": 150
+    },
+    {
+        "code": "a3faaef2-fe54-4949-928f-be93584da471",
+        "model" : "Airbus A319",
+        "minRunwayLength" : 2255,
+        "range": 6900,
+        "capacity": 124
+    },
+    {
+        "code": "eede6be6-f716-4e2e-bf81-885f0a16a50c",
+        "model" : "Boeing 737-900",
+        "minRunwayLength" : 2975,
+        "range": 5600,
+        "capacity": 215
+    },
+    {
+        "code": "51192f6b-9c26-4ef9-b843-cf241f326091",
+        "model" : "Embraer E-175",
+        "minRunwayLength" : 1261,
+        "range": 4000,
+        "capacity": 80
+    },
+    {
+        "code": "00126a63-f342-4ccd-ba86-4a7beecf10c0",
+        "model" : "Airbus A350",
+        "minRunwayLength" : 3200,
+        "range": 15000,
+        "capacity": 300
+    },
+    {
+        "code": "4f356f56-84dd-484f-a5f7-b960dfba5823",
+        "model" : "Boeing 747",
+        "minRunwayLength" : 3100,
+        "range": 14000,
+        "capacity": 467
+    },
+    {
+        "code": "0c3a60d6-8c99-472e-bf23-c1e689c5f6eb",
+        "model" : "ATR 72",
+        "minRunwayLength" : 1000,
+        "range": 3218,
+        "capacity": 78
+    }
+])
+
+db.createCollection("crew");
+db.crew.insertMany([
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 2"
+    },
+    {
+        "name": "John Doe 3"
+    },
+    {
+        "name": "John Doe 4"
+    },
+    {
+        "name": "John Doe 5"
+    },
+    {
+        "name": "John Doe 6"
+    },
+    {
+        "name": "John Doe 7"
+    },
+    {
+        "name": "John Doe 8"
+    },
+    {
+        "name": "John Doe 9"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    },
+    {
+        "name": "John Doe 1"
+    }
+])
+
+
+//db.createCollection("flights");
+db.flights.insertMany([
+    {
+        "type": "International",
+        "delayed": false,
+        "duration": 150,
+        "departureDate": new ISODate("2020-02-20T21:30:00Z"),
+        "distanceKm": 1870,
+        "departure": {
+            "code": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "runwayLength": 4215,
+            "location": {
+                "type": "Point",
+                "coordinates": [2.3, 48.8]
+            }
+        },
+        "destination": {
+            "code": "OTP",
+            "city": "Bucharest",
+            "country": "Romania",
+            "runwayLength": 3500,
+            "location": {
+                "type": "Point",
+                "coordinates": [26.1, 44.4]
+            }
+        },
+        "aircraftCode": "1b7ad0de-5836-489b-9791-5a81a51cdb81",
+        "crew": [
+            {"name": "Renaud Cahun", "position": "Captain", "hoursSlept": 8},
+            {"name": "Nina Peltier", "position": "Attendant", "nationality": "France", "hoursSlept": 6},
+            {"name": "Lou Galopin", "position": "Attendant", "nationality": "France", "hoursSlept": 7}
+        ]
+    },
+    {
+        "type": "International",
+        "delayed": false,
+        "duration": 120,
+        "departureDate": new ISODate("2020-02-20T21:20:00Z"),
+        "distanceKm": 1730,
+        "departure": {
+            "code": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "runwayLength": 4215,
+            "location": {
+                "type": "Point",
+                "coordinates": [2.3, 48.8]
+            }
+        },
+        "destination": {
+            "code": "LIS",
+            "city": "Lisabon",
+            "country": "Portugal",
+            "runwayLength": 3805,
+            "location": {
+                "type": "Point",
+                "coordinates": [-9.1, 38.7]
+            }
+        },
+        "aircraftCode": "eede6be6-f716-4e2e-bf81-885f0a16a50c",
+        "crew": [
+            {"name": "Pierre Cotard", "position": "Captain", "nationality": "France", "hoursSlept": 4},
+            {"name": "Amanda Lucas", "position": "Attendant", "hoursSlept": 6},
+            {"name": "Joe Stan", "position": "Attendant", "nationality": "UK", "hoursSlept": 8}
+        ]
+    },
+    {
+        "type": "International",
+        "delayed": true,
+        "duration": 260,
+        "departureDate": new ISODate("2020-02-20T23:00:00Z"),
+        "distanceKm": 3200,
+        "departure": {
+            "code": "IST",
+            "city": "Istanbul",
+            "country": "Turkey",
+            "runwayLength": 4100,
+            "location": {
+                "type": "Point",
+                "coordinates": [28.9, 41.0]
+            }
+        },
+        "destination": {
+            "code": "LIS",
+            "city": "Lisabon",
+            "country": "Portugal",
+            "runwayLength": 3805,
+            "location": {
+                "type": "Point",
+                "coordinates": [-9.1, 38.7]
+            }
+        },
+        "aircraftCode": "1b7ad0de-5836-489b-9791-5a81a51cdb81",
+        "crew": [
+            {"name": "Hakan Antal", "position": "Captain", "nationality": "Turkey", "hoursSlept": 5},
+            {"name": "Anna Hassan", "position": "Attendant", "hoursSlept": 4},
+            {"name": "Adina Popescu", "position": "Attendant", "hoursSlept": 9}
+        ]
+    },
+    {
+        "type": "Internal",
+        "delayed": true,
+        "duration": 80,
+        "departureDate": new ISODate("2020-02-20T17:15:00Z"),
+        "distanceKm": 400,
+        "departure": {
+            "code": "CDG",
+            "city": "Paris",
+            "country": "France",
+            "runwayLength": 4215,
+            "location": {
+                "type": "Point",
+                "coordinates": [2.3, 48.8]
+            }
+        },
+        "destination": {
+            "code": "LYS",
+            "city": "Lyon",
+            "country": "France",
+            "runwayLength": 4000,
+            "location": {
+                "type": "Point",
+                "coordinates": [4.8, 45.7]
+            }
+        },
+        "aircraftCode": "51192f6b-9c26-4ef9-b843-cf241f326091",
+        "crew": []
+    },
+    {
+        "type": "Internal",
+        "delayed": false,
+        "duration": 65,
+        "departureDate": new ISODate("2020-02-21T15:45:00Z"),
+        "distanceKm": 470,
+        "departure": {
+            "code": "LYS",
+            "city": "Lyon",
+            "country": "France",
+            "runwayLength": 4000,
+            "location": {
+                "type": "Point",
+                "coordinates": [4.8, 45.7]
+            }
+        },
+        "destination": {
+            "code": "NIC",
+            "city": "Nice",
+            "country": "France",
+            "runwayLength": 2570,
+            "location": {
+                "type": "Point",
+                "coordinates": [7.2, 43.7]
+            }
+        },
+        "aircraftCode": "a3faaef2-fe54-4949-928f-be93584da471",
+        "crew": [
+            {"name": "Patricia Mosar", "position": "Attendant", "hoursSlept": 7},
+            {"name": "Jerome Trudeau", "position": "Attendant", "nationality": "France", "hoursSlept": 4}
+        ]
+    },
+    {
+        "type": "Internal",
+        "delayed": false,
+        "duration": 100,
+        "departureDate": new ISODate("2020-03-21T11:10:00Z"),
+        "distanceKm": 419,
+        "departure": {
+            "code": "MUC",
+            "city": "Munich",
+            "country": "Germany",
+            "runwayLength": 4000,
+            "location": {
+                "type": "Point",
+                "coordinates": [11.7, 48.3]
+            }
+        },
+        "destination": {
+            "code": "FRA",
+            "city": "Frankfurt",
+            "country": "Germany",
+            "runwayLength": 4000,
+            "location": {
+                "type": "Point",
+                "coordinates": [8.56, 50.0]
+            }
+        },
+        "crew": [
+            {"name": "Engel Wagner", "position": "Captain", "hoursSlept": 2},
+            {"name": "Louise Baier", "position": "Attendant", "nationality": "Germany", "hoursSlept": 7}
+        ]
+    },
+    {
+        "type": "International",
+        "delayed": false,
+        "duration": 110,
+        "departureDate": new ISODate("2020-03-22T14:10:00Z"),
+        "distanceKm": 800,
+        "departure": {
+            "code": "MUC",
+            "city": "Munich",
+            "country": "Germany",
+            "runwayLength": 4000,
+            "location": {
+                "type": "Point",
+                "coordinates": [11.7, 48.3]
+            }
+        },
+        "destination": {
+            "code": "NIC",
+            "city": "Nice",
+            "country": "France",
+            "runwayLength": 2570,
+            "location": {
+                "type": "Point",
+                "coordinates": [7.2, 43.7]
+            }
+        },
+        "aircraftCode": null,
+        "crew": []
+    }
+])
+
+// it will show all the collection inside a database
+
+// MODULE 1
+show collections;
+show dbs; // show all the databases
+db.aircraft.count() // count
+db.aircraft.find({}) // find all
+db.aircraft.find({},{model:1,range:1}) // give me all the model and range
+db.aircraft.find({},{model:1,_id:0})   // give me the model and hide the _id
+db.aircraft.find({},{model:1,_id:0}).limit(5)   // first five
+db.aircraft.find({}).skip(2).limit(2)   // skip first 2 and give me the next 2 used for pagination
+// sort // ascending
+db.aircraft.find({}).sort({capacity:1});
+// sort // descending
+db.aircraft.find({}).sort({capacity:-1})
+db.aircraft.find({}).sort({capacity:-1,range:-1})
+db.flights.find({}).limit(1)
+db.crew.find({}).count()
+db.flights.find({}).count()
+db.aircraft.find({}).count()
+
+
+// MODULE 2
+
+db.aircraft.find({});
+
+//$eq  :equal
+//$ne  : not equal
+//$in  : filter in a range
+//$nin : filter in a range (not in)
+//$lt  : less than
+//$lte : less than equal
+//$gt  : greater than
+//$gte : greater than equal
+
+
+
+db.aircraft.find({model:"Boeing 737-900"})
+db.aircraft.find({range:5600.00}) // it will works same as 5600 mongo will convert it
+db.aircraft.find({underMaintenance:false}) // just to show that the boolean are also works. the field is not there
+
+
+// query my date
+db.flights.find({})
+
+
+// not international
+db.flights.find({
+    type:{
+        $ne:"International"
+    }
+})
+
+
+// find all the flights that are not international and not Intercontinental
+
+db.flights.find({
+    type:{
+        $nin:["International","Intercontinental"]
+    }
+})
+
+
+db.flights.find({
+    type:{
+        $nin:["International","Intercontinental"]
+    }
+}).count()
+
+
+// query by nested field
+db.flights.find({
+    "departure.code": "CDG"
+  }).pretty()
+
+// with object id
+
+db.flights.findOne({
+    _id: ObjectId("66d03617eb51b92ebc788b55")
+})
+
+db.flights.find({delayed:true,type:"International"},{_id:1,"departure.city":1,"destination.city":1})
+
+
+db.flights.find({
+    delayed:{$eq:true},
+    type:{$eq:"International"},
+
+},
+{
+    _id:1,
+    "departure.city":1,
+    "destination.city":1
+})
+
+db.flights.find({},{departureDate:1})
+
+db.flights.findOne({
+    departureDate: ISODate("2020-02-20T23:00:00Z")
+  })
