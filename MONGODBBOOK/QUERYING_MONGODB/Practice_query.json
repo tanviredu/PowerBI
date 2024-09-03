@@ -1284,3 +1284,40 @@ db.profile.find({
 })
 
 
+
+
+// MORE ON ELEM MATCH
+
+
+// if you use elemMatch as a query you can find only the document
+// based on the query suppose skills have tabletenis and level is less than 5
+
+db.profile.find({
+    skills:{
+        $elemMatch:{
+            name:"tabletenis",
+            lvl:{
+                $lt:5
+            }
+        }
+    }
+}
+)
+
+
+// but what happend if you use the same thing as a projection
+
+db.profile.find({},{
+    skills:{
+        $elemMatch:{
+            name:"tabletenis",
+            lvl:{
+                $lt:5
+            }
+        }
+    }
+}
+)
+// itt will return everything but the you will only get the skills array for the document 
+// matched
+
