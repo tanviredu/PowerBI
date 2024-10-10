@@ -1,0 +1,91 @@
+## import data
+URL : https://raw.githubusercontent.com/tanviredu/PowerBI/refs/heads/main/drwho.graphml
+COMMAND : CALL apoc.import.graphml("https://raw.githubusercontent.com/tanviredu/PowerBI/refs/heads/main/drwho.graphml", {readLabels: true})
+
+
+which characters played as an Actor("Doctor")
+MATCH 
+	(:Character)<-[:PLAYED]-(c:Actor) 
+RETURN c
+
+
+"Matt Smith" Played Which Character
+MATCH 
+	(:Actor{name:'Matt Smith'})-[:PLAYED]->(c:Character) 
+RETURN c
+
+
+Actor Node has a relation name REGENERATED_TO
+Find The Other Side of the node
+
+MATCH 
+	(actors:Actors)-[REGENERATED_TO]-> (others) 
+RETURN 
+	actors.name,others.name
+
+# Collect all nodes with the Character label which have the ENEMY_OF relation with the doctor. check if they have a COMES_FROM relation
+with nodes with a Planet Label. return the name of the planet and the number of accarance
+
+MATCH 
+	(:Character{name:"Doctor"})<-[ENEMY_OF]-(ac:Character)-[COMES_FROM]->(p:Planet) 
+RETURN 
+	ac,p 
+
+
+
+
+to generate the graph
+MATCH 
+	(a:Character{name:"Doctor"})<-[ENEMY_OF]-(ac:Character)-[COMES_FROM]->(p:Planet) 
+RETURN 
+	a,ac,p 
+
+to get the value this 
+
+
+
+MATCH 
+	(:Character{name:"Doctor"})<-[ENEMY_OF]-(:Character)-[COMES_FROM]->(p:Planet) 
+RETURN 
+	p.name as Planet,count(p) as Occarance 
+
+
+
+
+
+give me all the episodes of the character Amy Pond and actor Matt Smith were in.
+
+
+
+
+
+1) Find all the episodes where the Character Amy Pond and Actor Matt Smith were In. List the enemies of the Doctor that were in the Doctor that were in that episodes besides
+
+MATCH 
+(:Actor {name:'Matt Smith'})-[:APPEARED_IN]->(ep:Episode)<-[:APPEARED_IN]-(:Character{name:'Amy Pond'}),
+(ep)<-[:APPEARED_IN]-(enemies:Character)<-[:ENEMY_OF]-(:Character{name:'Doctor'})
+RETURN ep AS EPISODES,collect(enemies.name) AS ENEMIES
+
+
+
+
+make all this query closer to SQL
+
+MATCH 
+	(:Character)<-[:PLAYED]-(c:Actor) 
+	
+
+RETURN c
+
+TO
+
+MATCH (ac:Actor)-[:PLAYED]->(ch:Character)
+WHERE ch.name = "Doctor"
+ RETURN ac,ch
+
+
+
+FIND ALL THE CHARACTER ENEMY OF THE  CHARACTER "DOCTOR"
+
+
+
