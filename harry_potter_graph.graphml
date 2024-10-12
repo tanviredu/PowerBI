@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="1">
+  <data key="d0">Character</data>
+  <data key="d1">Harry Potter</data>
+</node>
+<node id="2">
+  <data key="d0">Character</data>
+  <data key="d1">Hermione Granger</data>
+</node>
+<node id="3">
+  <data key="d0">Character</data>
+  <data key="d1">Ron Weasley</data>
+</node>
+<node id="4">
+  <data key="d0">Character</data>
+  <data key="d1">Albus Dumbledore</data>
+</node>
+<node id="5">
+  <data key="d0">Character</data>
+  <data key="d1">Severus Snape</data>
+</node>
+<node id="6">
+  <data key="d0">Character</data>
+  <data key="d1">Voldemort</data>
+</node>
+<node id="7">
+  <data key="d0">Character</data>
+  <data key="d1">Draco Malfoy</data>
+</node>
+<node id="8">
+  <data key="d0">Character</data>
+  <data key="d1">Sirius Black</data>
+</node>
+<node id="9">
+  <data key="d0">Character</data>
+  <data key="d1">Neville Longbottom</data>
+</node>
+<node id="10">
+  <data key="d0">Character</data>
+  <data key="d1">Luna Lovegood</data>
+</node>
+<node id="11">
+  <data key="d0">Character</data>
+  <data key="d1">Minerva McGonagall</data>
+</node>
+<node id="12">
+  <data key="d0">Character</data>
+  <data key="d1">Rubeus Hagrid</data>
+</node>
+<node id="13">
+  <data key="d0">Character</data>
+  <data key="d1">Bellatrix Lestrange</data>
+</node>
+<node id="14">
+  <data key="d0">Character</data>
+  <data key="d1">Remus Lupin</data>
+</node>
+<node id="15">
+  <data key="d0">Character</data>
+  <data key="d1">Ginny Weasley</data>
+</node>
+<node id="16">
+  <data key="d0">Character</data>
+  <data key="d1">Lucius Malfoy</data>
+</node>
+<node id="17">
+  <data key="d0">Character</data>
+  <data key="d1">Nymphadora Tonks</data>
+</node>
+<node id="18">
+  <data key="d0">Character</data>
+  <data key="d1">Peter Pettigrew</data>
+</node>
+<node id="19">
+  <data key="d0">Location</data>
+  <data key="d1">Hogwarts</data>
+</node>
+<node id="20">
+  <data key="d0">Location</data>
+  <data key="d1">Ministry of Magic</data>
+</node>
+<node id="21">
+  <data key="d0">Location</data>
+  <data key="d1">Grimmauld Place</data>
+</node>
+<node id="22">
+  <data key="d0">Location</data>
+  <data key="d1">Forbidden Forest</data>
+</node>
+<node id="23">
+  <data key="d0">Event</data>
+  <data key="d1">Triwizard Tournament</data>
+</node>
+<node id="24">
+  <data key="d0">Event</data>
+  <data key="d1">Battle of Hogwarts</data>
+</node>
+<node id="25">
+  <data key="d0">Event</data>
+  <data key="d1">Order of the Phoenix Battle</data>
+</node>
+<edge source="1" target="19">
+  <data key="d2">attends</data>
+</edge>
+<edge source="1" target="2">
+  <data key="d2">friends</data>
+</edge>
+<edge source="1" target="3">
+  <data key="d2">friends</data>
+</edge>
+<edge source="1" target="4">
+  <data key="d2">mentored_by</data>
+</edge>
+<edge source="1" target="5">
+  <data key="d2">disliked_by</data>
+</edge>
+<edge source="1" target="6">
+  <data key="d2">enemy_of</data>
+</edge>
+<edge source="1" target="7">
+  <data key="d2">rival</data>
+</edge>
+<edge source="1" target="23">
+  <data key="d2">participated_in</data>
+</edge>
+<edge source="1" target="24">
+  <data key="d2">fought_in</data>
+</edge>
+<edge source="2" target="19">
+  <data key="d2">attends</data>
+</edge>
+<edge source="2" target="3">
+  <data key="d2">friends</data>
+</edge>
+<edge source="2" target="24">
+  <data key="d2">fought_in</data>
+</edge>
+<edge source="3" target="19">
+  <data key="d2">attends</data>
+</edge>
+<edge source="3" target="15">
+  <data key="d2">married_to</data>
+</edge>
+<edge source="4" target="19">
+  <data key="d2">works</data>
+</edge>
+<edge source="4" target="5">
+  <data key="d2">distrusted</data>
+</edge>
+<edge source="4" target="25">
+  <data key="d2">led</data>
+</edge>
+<edge source="5" target="19">
+  <data key="d2">works</data>
+</edge>
+<edge source="5" target="6">
+  <data key="d2">double_agent</data>
+</edge>
+<edge source="6" target="20">
+  <data key="d2">enemy_of</data>
+</edge>
+<edge source="6" target="7">
+  <data key="d2">leader_of</data>
+</edge>
+<edge source="6" target="13">
+  <data key="d2">loyal_to</data>
+</edge>
+<edge source="6" target="24">
+  <data key="d2">led</data>
+</edge>
+<edge source="7" target="19">
+  <data key="d2">attends</data>
+</edge>
+<edge source="7" target="24">
+  <data key="d2">fought_in</data>
+</edge>
+<edge source="8" target="21">
+  <data key="d2">hides</data>
+</edge>
+<edge source="8" target="1">
+  <data key="d2">godfather_of</data>
+</edge>
+<edge source="8" target="25">
+  <data key="d2">fought_in</data>
+</edge>
+<edge source="9" target="10">
+  <data key="d2">friends</data>
+</edge>
+<edge source="12" target="22">
+  <data key="d2">lives_near</data>
+</edge>
+<edge source="12" target="1">
+  <data key="d2">friends</data>
+</edge>
+<edge source="14" target="17">
+  <data key="d2">married_to</data>
+</edge>
+<edge source="18" target="6">
+  <data key="d2">betrayed</data>
+</edge>
+</graph></graphml>
