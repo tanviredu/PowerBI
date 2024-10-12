@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="relationship" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="Harry Potter">
+  <data key="d0">Character</data>
+</node>
+<node id="Hermione Granger">
+  <data key="d0">Character</data>
+</node>
+<node id="Ron Weasley">
+  <data key="d0">Character</data>
+</node>
+<node id="Voldemort">
+  <data key="d0">Character</data>
+</node>
+<node id="Albus Dumbledore">
+  <data key="d0">Character</data>
+</node>
+<node id="Severus Snape">
+  <data key="d0">Character</data>
+</node>
+<node id="Draco Malfoy">
+  <data key="d0">Character</data>
+</node>
+<node id="Sirius Black">
+  <data key="d0">Character</data>
+</node>
+<node id="Remus Lupin">
+  <data key="d0">Character</data>
+</node>
+<node id="Neville Longbottom">
+  <data key="d0">Character</data>
+</node>
+<node id="Bellatrix Lestrange">
+  <data key="d0">Character</data>
+</node>
+<node id="Luna Lovegood">
+  <data key="d0">Character</data>
+</node>
+<node id="Battle of Hogwarts">
+  <data key="d0">Event</data>
+</node>
+<node id="Triwizard Tournament">
+  <data key="d0">Event</data>
+</node>
+<node id="Yule Ball">
+  <data key="d0">Event</data>
+</node>
+<node id="Quidditch World Cup">
+  <data key="d0">Event</data>
+</node>
+<node id="The Order of the Phoenix">
+  <data key="d0">Event</data>
+</node>
+<node id="The Deathly Hallows">
+  <data key="d0">Event</data>
+</node>
+<node id="Daniel Radcliffe">
+  <data key="d0">Actor</data>
+</node>
+<node id="Emma Watson">
+  <data key="d0">Actor</data>
+</node>
+<node id="Rupert Grint">
+  <data key="d0">Actor</data>
+</node>
+<node id="Ralph Fiennes">
+  <data key="d0">Actor</data>
+</node>
+<node id="Michael Gambon">
+  <data key="d0">Actor</data>
+</node>
+<node id="Alan Rickman">
+  <data key="d0">Actor</data>
+</node>
+<node id="Tom Felton">
+  <data key="d0">Actor</data>
+</node>
+<node id="Gary Oldman">
+  <data key="d0">Actor</data>
+</node>
+<node id="David Thewlis">
+  <data key="d0">Actor</data>
+</node>
+<node id="Matthew Lewis">
+  <data key="d0">Actor</data>
+</node>
+<node id="Helena Bonham Carter">
+  <data key="d0">Actor</data>
+</node>
+<node id="Evanna Lynch">
+  <data key="d0">Actor</data>
+</node>
+<node id="Hogwarts">
+  <data key="d0">Location</data>
+</node>
+<node id="Diagon Alley">
+  <data key="d0">Location</data>
+</node>
+<node id="Ministry of Magic">
+  <data key="d0">Location</data>
+</node>
+<node id="Hogsmeade">
+  <data key="d0">Location</data>
+</node>
+<node id="Gryffindor">
+  <data key="d0">House</data>
+</node>
+<node id="Slytherin">
+  <data key="d0">House</data>
+</node>
+<node id="Ravenclaw">
+  <data key="d0">House</data>
+</node>
+<node id="Elder Wand">
+  <data key="d0">Item</data>
+</node>
+<node id="Marauder's Map">
+  <data key="d0">Item</data>
+</node>
+<node id="Invisibility Cloak">
+  <data key="d0">Item</data>
+</node>
+<node id="Horcrux">
+  <data key="d0">Item</data>
+</node>
+<edge source="Harry Potter" target="Daniel Radcliffe" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Harry Potter" target="Gryffindor" id="0">
+  <data key="d1">BELONGS_TO</data>
+</edge>
+<edge source="Harry Potter" target="Hermione Granger" id="0">
+  <data key="d1">FRIEND</data>
+</edge>
+<edge source="Harry Potter" target="Ron Weasley" id="0">
+  <data key="d1">FRIEND</data>
+</edge>
+<edge source="Harry Potter" target="Voldemort" id="0">
+  <data key="d1">ENEMY</data>
+</edge>
+<edge source="Harry Potter" target="Albus Dumbledore" id="0">
+  <data key="d1">STUDENT_OF</data>
+</edge>
+<edge source="Harry Potter" target="Battle of Hogwarts" id="0">
+  <data key="d1">PARTICIPATED_IN</data>
+</edge>
+<edge source="Harry Potter" target="Triwizard Tournament" id="0">
+  <data key="d1">PARTICIPATED_IN</data>
+</edge>
+<edge source="Harry Potter" target="Hogwarts" id="0">
+  <data key="d1">LOCATED_AT</data>
+</edge>
+<edge source="Harry Potter" target="Invisibility Cloak" id="0">
+  <data key="d1">USES</data>
+</edge>
+<edge source="Harry Potter" target="Elder Wand" id="0">
+  <data key="d1">USES</data>
+</edge>
+<edge source="Hermione Granger" target="Emma Watson" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Hermione Granger" target="Gryffindor" id="0">
+  <data key="d1">BELONGS_TO</data>
+</edge>
+<edge source="Hermione Granger" target="Hogwarts" id="0">
+  <data key="d1">LOCATED_AT</data>
+</edge>
+<edge source="Ron Weasley" target="Rupert Grint" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Ron Weasley" target="Gryffindor" id="0">
+  <data key="d1">BELONGS_TO</data>
+</edge>
+<edge source="Voldemort" target="Ralph Fiennes" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Voldemort" target="Battle of Hogwarts" id="0">
+  <data key="d1">PARTICIPATED_IN</data>
+</edge>
+<edge source="Voldemort" target="Ministry of Magic" id="0">
+  <data key="d1">LOCATED_AT</data>
+</edge>
+<edge source="Voldemort" target="Horcrux" id="0">
+  <data key="d1">CREATED</data>
+</edge>
+<edge source="Albus Dumbledore" target="Michael Gambon" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Albus Dumbledore" target="The Order of the Phoenix" id="0">
+  <data key="d1">PARTICIPATED_IN</data>
+</edge>
+<edge source="Severus Snape" target="Alan Rickman" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Severus Snape" target="Voldemort" id="0">
+  <data key="d1">ALLY</data>
+</edge>
+<edge source="Draco Malfoy" target="Tom Felton" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Draco Malfoy" target="Slytherin" id="0">
+  <data key="d1">BELONGS_TO</data>
+</edge>
+<edge source="Draco Malfoy" target="Harry Potter" id="0">
+  <data key="d1">RIVAL</data>
+</edge>
+<edge source="Sirius Black" target="Gary Oldman" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Remus Lupin" target="David Thewlis" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Neville Longbottom" target="Matthew Lewis" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Neville Longbottom" target="Gryffindor" id="0">
+  <data key="d1">BELONGS_TO</data>
+</edge>
+<edge source="Bellatrix Lestrange" target="Helena Bonham Carter" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Bellatrix Lestrange" target="Voldemort" id="0">
+  <data key="d1">LOYAL_FOLLOWER</data>
+</edge>
+<edge source="Luna Lovegood" target="Evanna Lynch" id="0">
+  <data key="d1">PORTRAYED_BY</data>
+</edge>
+<edge source="Luna Lovegood" target="Ravenclaw" id="0">
+  <data key="d1">BELONGS_TO</data>
+</edge>
+</graph></graphml>
